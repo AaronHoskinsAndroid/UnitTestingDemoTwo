@@ -174,3 +174,7 @@ exec "$JAVACMD" "$@"
 yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-28"
 
 yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;27.0.3"
+
+yes | $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-29"
+
+yes | $ANDROID_HOME/tools/bin/sdkmanager "build-tools;29.0.0"
