@@ -1,0 +1,51 @@
+Unit Testing, UI Testing, Continuous Integration
+
+    - Unit Testing
+        - The logic and returns of methods within a class
+        - No device is needed for unit testing
+        - Some major Lib. we use for unit testing
+            - Junit
+                - Allows for assertion test
+                    ex: equals, true, false assertion
+                - Test if the return matches the assertions made
+            - Mockito
+                - Generally for creating mock object and returns
+                - VERY helpful when classes have dependencies
+            - Power Mock
+                - Much like Mockito but has more functionality
+                    - Testing static values and returns
+        - Basic Annotations needed
+            - @RunWith(<runner>)
+                - Decides which framework will perform the test
+            - @Before
+                - Runs the block of code annotated with this EVERY
+                    single test method/function
+            - @BeforeClass
+                - Runs once for each class but not each method/fun
+            - @Test
+                - Designates the method/function is a test of the
+                    logic within the class/object being tested
+    Test Driven Development
+        - Development methodology where unit test are written before actual
+            code development.
+
+Continuous Integration (Continuous Development)
+    - Software development principle where the developers are
+        constantly performing unit test and test builds of the
+        software to insure code quality and functionality
+    - CI tools
+        - Jenkins - Most Popular
+        - Travis - free
+        - Bamboo
+        - Firebase Testlabs
+        - CircleCI
+        - ...
+    - What most tools will do
+        - Run unit test
+        - Compile and build program and resources
+        - Generate a report showing results and if test passed/failed
+    - What they require
+        - Repository access
+        - Script (custom to the CI tool) to define how and what to build
+            and test
+        - Subscription to the service
